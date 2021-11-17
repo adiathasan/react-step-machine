@@ -1,0 +1,52 @@
+{
+  "name": "react-step-machine",
+  "version": "1.0.0",
+  "description": "A hook based multistep wizard library for React.js to have more control over the user's customization & logic.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rollup -c",
+    "start": "rollup -c -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adiathasan/react-step-machine.git"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
+  },
+  "keywords": [
+    "react",
+    "hooks",
+    "custom-hooks",
+    "mutistep",
+    "wizard"
+  ],
+  "author": "Adiat Hasan <adiathasan.me@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adiathasan/react-step-machine/issues"
+  },
+  "homepage": "https://github.com/adiathasan/react-step-machine#readme",
+  "dependencies": {
+    "react-store-maker": "^1.0.2"
+  },
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "@types/react": "^17.0.35",
+    "@types/react-dom": "^17.0.11",
+    "autoprefixer": "^10.4.0",
+    "babel-core": "^6.26.3",
+    "babel-runtime": "^6.26.0",
+    "postcss": "^8.3.11",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "rollup": "^2.60.0",
+    "rollup-plugin-postcss": "^4.0.1",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "typescript": "^4.4.4"
+  }
+}
