@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/adiathasan/react-step-machine#readme",
   "dependencies": {
-    "react-store-maker": "^1.0.2"
+    "react-store-maker": "^1.0.5"
   },
   "files": [
     "dist"

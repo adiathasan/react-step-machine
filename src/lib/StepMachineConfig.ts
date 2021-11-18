@@ -1,7 +1,7 @@
 import { createStore } from 'react-store-maker';
 
 // @ts-ignore
-import Animate from './animate.module.css';
+import Animate from './styles/animate.module.css';
 import { transitions } from './StepMachine';
 
 export interface StepState {
@@ -40,7 +40,11 @@ const reducer = (state: State, action: Action) => {
 	};
 };
 
-const [MachinePrivider, useStepStore, useStepDispatch] = createStore(init, reducer);
+const [MachinePrivider, useStepStore, useStepDispatch] = createStore(init, reducer, {
+	providerName: 'StepMachine',
+	useStoreName: 'useStepStore',
+	useDispatchName: 'useStoreActions',
+});
 
 const StepPrivider: (props: any) => JSX.Element = MachinePrivider;
 

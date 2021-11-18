@@ -1,8 +1,8 @@
 import * as React from 'react';
 
 // @ts-ignore
-import styles from './styles.module.css';
-import { useStep } from './useStep';
+import styles from './styles/styles.module.css';
+import { useStep } from './hooks/useStep';
 
 export interface StepProps {
 	order: number;

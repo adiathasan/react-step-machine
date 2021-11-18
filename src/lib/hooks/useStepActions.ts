@@ -1,26 +1,13 @@
 import * as React from 'react';
 
-import { StepProps } from './Step';
-import { useStepDispatch, useStepStore } from './StepMachineConfig';
-
-export const useStep = (props: StepProps) => {
-	const { activeStep, classes } = useStepStore();
-
-	const isStepActive = React.useMemo(() => activeStep === props.order, [activeStep, props.order]);
-
-	const transitions = React.useMemo(() => classes[props.order], [classes, props.order]);
-
-	return { isStepActive, transitions };
-};
+import { useStepStore, useStepDispatch } from '../StepMachineConfig';
 
 export interface StepActionProps {
 	onStepChangeCb?: (prevStep: number, activeStep: number) => void;
 }
 
 export const useStepActions = (props?: StepActionProps) => {
-	const { activeStep, totalSteps, classes, namedSteps, activatedSteps, transitions, activeNamedStep } = useStepStore();
-
-	console.log(activeStep, totalSteps, classes, namedSteps, activatedSteps, transitions, activeNamedStep, 'use');
+	const { activeStep, totalSteps, classes, namedSteps, activatedSteps, transitions } = useStepStore();
 
 	const dispatch = useStepDispatch();
 
