@@ -1,6 +1,6 @@
 {
   "name": "react-step-machine",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A hook based multistep wizard library for React.js to have more control over the user's customization & logic.",
   "main": "dist/index.js",
   "scripts": {
